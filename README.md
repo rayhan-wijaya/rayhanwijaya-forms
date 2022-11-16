@@ -26,11 +26,11 @@ const questionAnswerSchema = new Schema({
 
 const responseSchema = new Schema({
   respondeeEmail: {
-    type: string,
+    type: String,
     required: true,
    },
   formId: {
-    type: string,
+    type: String,
     required: true,
   },
   answers: {
