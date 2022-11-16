@@ -7,6 +7,7 @@ const formRouter = router({
 			z.object({
 				title: z.string(),
 				description: z.string().optional(),
+				banner: z.string().optional(),
 			})
 		)
 		.mutation(({ input }) => {
