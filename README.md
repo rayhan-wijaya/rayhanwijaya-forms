@@ -58,5 +58,5 @@ export default responseSchema;
 }
 ```
 
-The question response will be an object containing "response", so that new properties can be added without migrating.
-"response" will be an array of strings so that multiple responses through checkboxes can be stored, eventhough if it's a single response.
+The question response will be an object containing `response`, so that new properties can be added without migrating.
+`response` will be an array of strings so that multiple responses through checkboxes can be stored, eventhough if it's a single response.
