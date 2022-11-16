@@ -19,11 +19,8 @@ A response data would be shaped as follows:
 ```typescript
 const questionResponseSchema = new Schema({
   response: {
-    type: Schema.Types.Mixed,
-    validate: {
-      validator: (newResponse) => typeof newResponse == 'string' || newResponse.isArray(),
-      message: 'Question response must be a string, or an array of strings.',
-    },
+    type: [String],
+    required: true,
   },
 });
 
@@ -55,7 +52,7 @@ export default responseSchema;
       "response": ["Cats", "Dogs", "Rabbits"]
     },
     "2": {
-      "response": "I like cats because they reduce my stress. I like dogs because they're friendly. I like rabbits because of their ears."
+      "response": ["I like cats because they reduce my stress. I like dogs because they're friendly. I like rabbits because of their ears."]
     }
   }
 }
