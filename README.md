@@ -10,3 +10,5 @@ This is a web application for responding to forms belonging to the rayhanwijaya.
 
 ### Backend
 * tRPC
+* PostgreSQL
+* Prisma
