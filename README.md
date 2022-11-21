@@ -6,7 +6,7 @@ This is a web application for responding to forms belonging to the rayhanwijaya.
 
 ### Frontend
 * NextJS
-* Sass
+* TailwindCSS
 
 ### Backend
 * tRPC
